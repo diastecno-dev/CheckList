@@ -1,0 +1,101 @@
+﻿namespace CheckList
+{
+    partial class InstalacaoW10
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.chkOffice = new System.Windows.Forms.CheckBox();
+            this.chkChrome = new System.Windows.Forms.CheckBox();
+            this.chkCodec = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
+            // 
+            // chkOffice
+            // 
+            this.chkOffice.AutoSize = true;
+            this.chkOffice.Location = new System.Drawing.Point(55, 85);
+            this.chkOffice.Name = "chkOffice";
+            this.chkOffice.Size = new System.Drawing.Size(127, 17);
+            this.chkOffice.TabIndex = 0;
+            this.chkOffice.Text = "Microsoft Office 2013";
+            this.chkOffice.UseVisualStyleBackColor = true;
+            // 
+            // chkChrome
+            // 
+            this.chkChrome.AutoSize = true;
+            this.chkChrome.Location = new System.Drawing.Point(55, 108);
+            this.chkChrome.Name = "chkChrome";
+            this.chkChrome.Size = new System.Drawing.Size(99, 17);
+            this.chkChrome.TabIndex = 1;
+            this.chkChrome.Text = "Google Chrome";
+            this.chkChrome.UseVisualStyleBackColor = true;
+            // 
+            // chkCodec
+            // 
+            this.chkCodec.AutoSize = true;
+            this.chkCodec.Location = new System.Drawing.Point(55, 131);
+            this.chkCodec.Name = "chkCodec";
+            this.chkCodec.Size = new System.Drawing.Size(87, 17);
+            this.chkCodec.TabIndex = 2;
+            this.chkCodec.Text = "K-Lite Codec";
+            this.chkCodec.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(55, 154);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 3;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // InstalacaoW10
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(414, 372);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.chkCodec);
+            this.Controls.Add(this.chkChrome);
+            this.Controls.Add(this.chkOffice);
+            this.Name = "InstalacaoW10";
+            this.Text = "Instalação";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.CheckBox chkOffice;
+        private System.Windows.Forms.CheckBox chkChrome;
+        private System.Windows.Forms.CheckBox chkCodec;
+        private System.Windows.Forms.CheckBox checkBox1;
+    }
+}
+
