@@ -29,38 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.btnFechar = new System.Windows.Forms.Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnW10 = new System.Windows.Forms.Button();
+            this.btnW8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnW7 = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlForm = new System.Windows.Forms.Panel();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlForm.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFechar.BackColor = System.Drawing.Color.Silver;
-            this.btnFechar.FlatAppearance.BorderSize = 0;
-            this.btnFechar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btnFechar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFechar.Location = new System.Drawing.Point(963, 12);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(25, 23);
-            this.btnFechar.TabIndex = 3;
-            this.btnFechar.Text = "X";
-            this.btnFechar.UseVisualStyleBackColor = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(189)))), ((int)(((byte)(200)))));
-            this.pnlMenu.Controls.Add(this.btnW10);
+            this.pnlMenu.Controls.Add(this.btnSair);
+            this.pnlMenu.Controls.Add(this.btnW8);
             this.pnlMenu.Controls.Add(this.label1);
             this.pnlMenu.Controls.Add(this.btnW7);
             this.pnlMenu.Controls.Add(this.pnlLogo);
@@ -70,26 +58,27 @@
             this.pnlMenu.Size = new System.Drawing.Size(243, 565);
             this.pnlMenu.TabIndex = 4;
             // 
-            // btnW10
+            // btnW8
             // 
-            this.btnW10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnW10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnW10.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
-            this.btnW10.FlatAppearance.BorderSize = 0;
-            this.btnW10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnW10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.btnW10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnW10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnW10.Image = ((System.Drawing.Image)(resources.GetObject("btnW10.Image")));
-            this.btnW10.Location = new System.Drawing.Point(0, 185);
-            this.btnW10.Name = "btnW10";
-            this.btnW10.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.btnW10.Size = new System.Drawing.Size(243, 89);
-            this.btnW10.TabIndex = 5;
-            this.btnW10.Text = "   WINDOWS 8/10";
-            this.btnW10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnW10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnW10.UseVisualStyleBackColor = true;
+            this.btnW8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnW8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnW8.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
+            this.btnW8.FlatAppearance.BorderSize = 0;
+            this.btnW8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnW8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.btnW8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnW8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnW8.Image = ((System.Drawing.Image)(resources.GetObject("btnW8.Image")));
+            this.btnW8.Location = new System.Drawing.Point(0, 185);
+            this.btnW8.Name = "btnW8";
+            this.btnW8.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnW8.Size = new System.Drawing.Size(243, 89);
+            this.btnW8.TabIndex = 5;
+            this.btnW8.Text = "   WINDOWS 8";
+            this.btnW8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnW8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnW8.UseVisualStyleBackColor = true;
+            this.btnW8.Click += new System.EventHandler(this.btnW8_Click);
             // 
             // label1
             // 
@@ -145,13 +134,56 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // pnlForm
+            // 
+            this.pnlForm.Controls.Add(this.label2);
+            this.pnlForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlForm.Location = new System.Drawing.Point(243, 0);
+            this.pnlForm.Name = "pnlForm";
+            this.pnlForm.Size = new System.Drawing.Size(757, 565);
+            this.pnlForm.TabIndex = 5;
+            // 
+            // btnSair
+            // 
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
+            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSair.Location = new System.Drawing.Point(0, 451);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
+            this.btnSair.Size = new System.Drawing.Size(243, 89);
+            this.btnSair.TabIndex = 6;
+            this.btnSair.Text = "    SAIR";
+            this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(232, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(316, 69);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "WINDOWS 7";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1000, 565);
+            this.Controls.Add(this.pnlForm);
             this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.btnFechar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -159,17 +191,20 @@
             this.pnlMenu.PerformLayout();
             this.pnlLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlForm.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnW7;
-        private System.Windows.Forms.Button btnW10;
+        private System.Windows.Forms.Button btnW8;
+        private System.Windows.Forms.Panel pnlForm;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Label label2;
     }
 }
