@@ -21,5 +21,23 @@ namespace CheckList
         {
 
         }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var menuPrincipal = new Menu();
+            menuPrincipal.Show();
+
+            this.Close();
+        }
     }
 }
