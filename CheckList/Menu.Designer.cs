@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnSair = new System.Windows.Forms.Button();
             this.btnW8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnW7 = new System.Windows.Forms.Button();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlForm = new System.Windows.Forms.Panel();
-            this.btnSair = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
@@ -57,6 +57,28 @@
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(243, 565);
             this.pnlMenu.TabIndex = 4;
+            // 
+            // btnSair
+            // 
+            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSair.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
+            this.btnSair.FlatAppearance.BorderSize = 0;
+            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
+            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSair.Location = new System.Drawing.Point(0, 451);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
+            this.btnSair.Size = new System.Drawing.Size(243, 89);
+            this.btnSair.TabIndex = 6;
+            this.btnSair.Text = "    SAIR";
+            this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnW8
             // 
@@ -112,7 +134,6 @@
             this.btnW7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnW7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnW7.UseVisualStyleBackColor = true;
-            this.btnW7.Click += new System.EventHandler(this.btnW7_Click_1);
             // 
             // pnlLogo
             // 
@@ -142,28 +163,6 @@
             this.pnlForm.Name = "pnlForm";
             this.pnlForm.Size = new System.Drawing.Size(757, 565);
             this.pnlForm.TabIndex = 5;
-            // 
-            // btnSair
-            // 
-            this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSair.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnSair.FlatAppearance.BorderColor = System.Drawing.Color.Indigo;
-            this.btnSair.FlatAppearance.BorderSize = 0;
-            this.btnSair.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnSair.FlatAppearance.MouseOverBackColor = System.Drawing.Color.BlueViolet;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Image = ((System.Drawing.Image)(resources.GetObject("btnSair.Image")));
-            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSair.Location = new System.Drawing.Point(0, 451);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Padding = new System.Windows.Forms.Padding(23, 0, 0, 0);
-            this.btnSair.Size = new System.Drawing.Size(243, 89);
-            this.btnSair.TabIndex = 6;
-            this.btnSair.Text = "    SAIR";
-            this.btnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // label2
             // 
