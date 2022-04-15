@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CheckList
@@ -27,14 +28,14 @@ namespace CheckList
                 frmAtivo.Close();
         }
 
-        //private void ActiveButton(Button frmAtivo)
-        //{
+        private void ActiveButton(Button frmAtivo)
+        {
 
-        //    foreach (Control ctrl in pnlMenu.Controls)
-        //        ctrl.ForeColor = Color.White;
+            foreach (Control ctrl in pnlMenu.Controls)
+                ctrl.ForeColor = Color.White;
 
-        //    frmAtivo.ForeColor = Color.Red;
-        //}           
+            frmAtivo.ForeColor = Color.Red;
+        }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
@@ -43,7 +44,7 @@ namespace CheckList
 
         private void btnW8_Click(object sender, EventArgs e)
         {
-            // ActiveButton(btnW8);
+            ActiveButton(btnW8);
             var formW8 = new InstalacaoW10();
             FormShow(formW8);
         }
