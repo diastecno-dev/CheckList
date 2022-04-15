@@ -32,6 +32,7 @@
             this.chkCodec = new System.Windows.Forms.CheckBox();
             this.chkChrome = new System.Windows.Forms.CheckBox();
             this.chkOffice = new System.Windows.Forms.CheckBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -73,11 +74,22 @@
             this.chkOffice.Text = "Microsoft Office 2010";
             this.chkOffice.UseVisualStyleBackColor = true;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Location = new System.Drawing.Point(31, 397);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
+            this.btnVoltar.TabIndex = 8;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // InstalacaoW7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.chkCodec);
             this.Controls.Add(this.chkChrome);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.CheckBox chkCodec;
         private System.Windows.Forms.CheckBox chkChrome;
         private System.Windows.Forms.CheckBox chkOffice;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

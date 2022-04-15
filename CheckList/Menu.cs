@@ -12,8 +12,9 @@ namespace CheckList
 
         private void btnW7_Click(object sender, EventArgs e)
         {
-            var instalacaoW7 = new InstalacaoW7();
-            instalacaoW7.Show();
+            Hide();          
+            var instalacaoW7 = new InstalacaoW7(this);
+            instalacaoW7.ShowDialog();           
         }
 
         private void btnW10_Click(object sender, EventArgs e)

@@ -59,6 +59,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnW10);
             this.Controls.Add(this.btnW7);
+            this.IsMdiContainer = true;
             this.Name = "Menu";
             this.Text = "Menu";
             this.ResumeLayout(false);
