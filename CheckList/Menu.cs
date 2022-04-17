@@ -32,21 +32,44 @@ namespace CheckList
         {
 
             foreach (Control ctrl in pnlMenu.Controls)
-                ctrl.ForeColor = Color.White;
+                ctrl.ForeColor = Color.Black;
 
-            frmAtivo.ForeColor = Color.Red;
+            frmAtivo.ForeColor = Color.White;
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            var menuPrincipal = new Menu();
+            menuPrincipal.Show();
+
+            //this.Close();
         }
 
         private void btnW8_Click(object sender, EventArgs e)
         {
             ActiveButton(btnW8);
-            var formW8 = new InstalacaoW10();
+            var formW8 = new InstalacaoW8();
             FormShow(formW8);
         }
+
+        private void btnW7_Click(object sender, EventArgs e)
+        {
+            ActiveButton(btnW7);
+            var formW7 = new InstalacaoW7();
+            FormShow(formW7);
+        }
+
+        private void btnW10_Click(object sender, EventArgs e)
+        {
+            ActiveButton(btnW10);
+            var formW10 = new InstalacaoW10();
+            FormShow(formW10);
+        }
+
+        private void btnSair_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

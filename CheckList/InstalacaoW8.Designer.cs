@@ -1,6 +1,6 @@
 ﻿namespace CheckList
 {
-    partial class InstalacaoW7
+    partial class InstalacaoW8
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstalacaoW7));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstalacaoW8));
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.btnInstalar = new System.Windows.Forms.Button();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.chkCodec = new System.Windows.Forms.CheckBox();
             this.chkChrome = new System.Windows.Forms.CheckBox();
             this.chkOffice = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.btnInstalar = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Location = new System.Drawing.Point(232, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(316, 76);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "     WINDOWS 8";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(656, 515);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(89, 17);
+            this.checkBox4.TabIndex = 29;
+            this.checkBox4.Text = "Instalar todos";
+            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // btnInstalar
+            // 
+            this.btnInstalar.Location = new System.Drawing.Point(652, 486);
+            this.btnInstalar.Name = "btnInstalar";
+            this.btnInstalar.Size = new System.Drawing.Size(93, 23);
+            this.btnInstalar.TabIndex = 28;
+            this.btnInstalar.Text = "INSTALAR";
+            this.btnInstalar.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -46,9 +78,9 @@
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(239, 310);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(219, 33);
-            this.checkBox2.TabIndex = 13;
-            this.checkBox2.Text = "ADOBE READER";
+            this.checkBox2.Size = new System.Drawing.Size(152, 33);
+            this.checkBox2.TabIndex = 27;
+            this.checkBox2.Text = "ATIVADOR";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -58,7 +90,7 @@
             this.checkBox3.Location = new System.Drawing.Point(239, 270);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(127, 33);
-            this.checkBox3.TabIndex = 12;
+            this.checkBox3.TabIndex = 26;
             this.checkBox3.Text = "WINRAR";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
@@ -69,7 +101,7 @@
             this.chkCodec.Location = new System.Drawing.Point(239, 230);
             this.chkCodec.Name = "chkCodec";
             this.chkCodec.Size = new System.Drawing.Size(199, 33);
-            this.chkCodec.TabIndex = 10;
+            this.chkCodec.TabIndex = 25;
             this.chkCodec.Text = "K-LITE CODEC";
             this.chkCodec.UseVisualStyleBackColor = true;
             // 
@@ -80,7 +112,7 @@
             this.chkChrome.Location = new System.Drawing.Point(239, 190);
             this.chkChrome.Name = "chkChrome";
             this.chkChrome.Size = new System.Drawing.Size(247, 33);
-            this.chkChrome.TabIndex = 9;
+            this.chkChrome.TabIndex = 24;
             this.chkChrome.Text = "GOOGLE CHROME";
             this.chkChrome.UseVisualStyleBackColor = true;
             // 
@@ -91,8 +123,8 @@
             this.chkOffice.Location = new System.Drawing.Point(239, 150);
             this.chkOffice.Name = "chkOffice";
             this.chkOffice.Size = new System.Drawing.Size(329, 33);
-            this.chkOffice.TabIndex = 8;
-            this.chkOffice.Text = "MICROSOFT OFFICE 2010";
+            this.chkOffice.TabIndex = 23;
+            this.chkOffice.Text = "MICROSOFT OFFICE 2013";
             this.chkOffice.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -101,75 +133,44 @@
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(239, 350);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(152, 33);
-            this.checkBox1.TabIndex = 15;
-            this.checkBox1.Text = "ATIVADOR";
+            this.checkBox1.Size = new System.Drawing.Size(248, 33);
+            this.checkBox1.TabIndex = 32;
+            this.checkBox1.Text = "MENU WINDOWS 7";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(656, 515);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(89, 17);
-            this.checkBox4.TabIndex = 17;
-            this.checkBox4.Text = "Instalar todos";
-            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // btnInstalar
-            // 
-            this.btnInstalar.Location = new System.Drawing.Point(652, 486);
-            this.btnInstalar.Name = "btnInstalar";
-            this.btnInstalar.Size = new System.Drawing.Size(93, 23);
-            this.btnInstalar.TabIndex = 16;
-            this.btnInstalar.Text = "INSTALAR";
-            this.btnInstalar.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(232, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(316, 76);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "WINDOWS 7";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // InstalacaoW7
+            // InstalacaoW8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(757, 565);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.btnInstalar);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.chkCodec);
             this.Controls.Add(this.chkChrome);
             this.Controls.Add(this.chkOffice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "InstalacaoW7";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "APPs Windows 7";
+            this.Name = "InstalacaoW8";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "v";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Button btnInstalar;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox chkCodec;
         private System.Windows.Forms.CheckBox chkChrome;
         private System.Windows.Forms.CheckBox chkOffice;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.Button btnInstalar;
-        private System.Windows.Forms.Label label2;
     }
 }

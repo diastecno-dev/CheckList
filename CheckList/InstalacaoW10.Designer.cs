@@ -34,7 +34,6 @@
             this.chkCodec = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.btnInstalar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -94,17 +93,6 @@
             this.checkBox3.TabIndex = 5;
             this.checkBox3.Text = "WINRAR";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(553, 486);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 23);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "VOLTAR";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // checkBox4
             // 
@@ -133,7 +121,7 @@
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Location = new System.Drawing.Point(232, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(336, 69);
+            this.label2.Size = new System.Drawing.Size(336, 76);
             this.label2.TabIndex = 22;
             this.label2.Text = "   WINDOWS 10";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -144,7 +132,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(757, 565);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.btnInstalar);
             this.Controls.Add(this.checkBox2);
@@ -155,8 +142,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InstalacaoW10";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "APPs Win8/10";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,7 +154,6 @@
         private System.Windows.Forms.CheckBox chkCodec;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button btnInstalar;
         private System.Windows.Forms.Label label2;
