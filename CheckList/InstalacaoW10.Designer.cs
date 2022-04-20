@@ -32,8 +32,8 @@
             this.chkOffice = new System.Windows.Forms.CheckBox();
             this.chkChrome = new System.Windows.Forms.CheckBox();
             this.chkCodec = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.chkAtivador = new System.Windows.Forms.CheckBox();
+            this.chkWinrar = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.btnInstalar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,27 +72,27 @@
             this.chkCodec.Text = "K-LITE CODEC";
             this.chkCodec.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkAtivador
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(239, 310);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(152, 33);
-            this.checkBox2.TabIndex = 6;
-            this.checkBox2.Text = "ATIVADOR";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkAtivador.AutoSize = true;
+            this.chkAtivador.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkAtivador.Location = new System.Drawing.Point(239, 310);
+            this.chkAtivador.Name = "chkAtivador";
+            this.chkAtivador.Size = new System.Drawing.Size(152, 33);
+            this.chkAtivador.TabIndex = 6;
+            this.chkAtivador.Text = "ATIVADOR";
+            this.chkAtivador.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkWinrar
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(239, 270);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(127, 33);
-            this.checkBox3.TabIndex = 5;
-            this.checkBox3.Text = "WINRAR";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.chkWinrar.AutoSize = true;
+            this.chkWinrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkWinrar.Location = new System.Drawing.Point(239, 270);
+            this.chkWinrar.Name = "chkWinrar";
+            this.chkWinrar.Size = new System.Drawing.Size(127, 33);
+            this.chkWinrar.TabIndex = 5;
+            this.chkWinrar.Text = "WINRAR";
+            this.chkWinrar.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
@@ -134,8 +134,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.btnInstalar);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.chkAtivador);
+            this.Controls.Add(this.chkWinrar);
             this.Controls.Add(this.chkCodec);
             this.Controls.Add(this.chkChrome);
             this.Controls.Add(this.chkOffice);
@@ -152,8 +152,8 @@
         private System.Windows.Forms.CheckBox chkOffice;
         private System.Windows.Forms.CheckBox chkChrome;
         private System.Windows.Forms.CheckBox chkCodec;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox chkAtivador;
+        private System.Windows.Forms.CheckBox chkWinrar;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button btnInstalar;
         private System.Windows.Forms.Label label2;
