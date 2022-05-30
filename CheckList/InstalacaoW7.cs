@@ -20,5 +20,11 @@ namespace CheckList
             Menu.Visible = true;
             
         }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var menuPrincipal = new Menu();
+            menuPrincipal.Show();
+            this.Close();
+        }
     }
 }
