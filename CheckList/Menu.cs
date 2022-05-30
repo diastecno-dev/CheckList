@@ -54,6 +54,7 @@ namespace CheckList
 
         private void btnW7_Click(object sender, EventArgs e)
         {
+
             ActiveButton(btnW7);
             var formW7 = new InstalacaoW7();
             FormShow(formW7);
