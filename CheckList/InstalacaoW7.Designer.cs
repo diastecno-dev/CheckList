@@ -95,7 +95,6 @@
             this.chkOffice.Text = "MICROSOFT OFFICE 2010";
             this.chkOffice.UseVisualStyleBackColor = true;
             // 
-
             // chkAtivador
             // 
             this.chkAtivador.AutoSize = true;
