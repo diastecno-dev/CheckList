@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Drawing;
+using System.Management;
 using System.Windows.Forms;
+
 
 namespace CheckList
 {
@@ -71,5 +73,25 @@ namespace CheckList
             Application.Exit();
         }
 
+        private void pnlForm_Paint(object sender, PaintEventArgs e)
+        {
+            getOperatingSystemInfo();
+        }
+
+        private void getOperatingSystemInfo()
+        {
+            ManagementObjectSearcher mos = new ManagementObjectSearcher("select * from Win32_OperatingSystem");
+            foreach (ManagementObject managementObject in mos.Get())
+            {
+                if (managementObject["Description"] != null)
+                {
+                    lblTeste.Text = managementObject["Description"].ToString();
+                }
+            }
+        }
+
+
     }
+
+
 }

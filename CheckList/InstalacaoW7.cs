@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Configuration;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace CheckList
@@ -58,8 +59,21 @@ namespace CheckList
         private void InstalarChrome()
         {
             if (chkChrome.Checked)
-                new Instalacao().InstalarChrome();
+                new Instalacao().InstalarChrome();         
 
+            var teste = Process.GetProcessesByName("AdobeReaderPalnacara");
+
+            do
+            {
+
+            } while (teste.Length != 0);
+
+
+
+            while (teste.Length != 0)
+            {              
+                teste = Process.GetProcessesByName("Adobe Self Extractor");
+            }            
         }
         private void InstalarKlite()
         {
