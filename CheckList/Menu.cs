@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Drawing;
-using System.Management;
 using System.Windows.Forms;
 
 
@@ -75,22 +74,12 @@ namespace CheckList
 
         private void pnlForm_Paint(object sender, PaintEventArgs e)
         {
-            getOperatingSystemInfo();
+            SystemInfo systemInfo = new SystemInfo();
+            lblWindows.Text = systemInfo.GetOperatingSystemInfo("Win32_OperatingSystem", "Caption") + " " + systemInfo.GetOperatingSystemInfo("Win32_OperatingSystem", "OSArchitecture");
+            lblProcessador.Text = systemInfo.GetOperatingSystemInfo("Win32_Processor", "Name");
+            lblMemoria.Text = systemInfo.GetMemorySystemInfo("Win32_PhysicalMemory", "Capacity")+" GB de Memória RAM";
         }
-
-        private void getOperatingSystemInfo()
-        {
-            ManagementObjectSearcher mos = new ManagementObjectSearcher("select * from Win32_OperatingSystem");
-            foreach (ManagementObject managementObject in mos.Get())
-            {
-                if (managementObject["Description"] != null)
-                {
-                    lblTeste.Text = managementObject["Description"].ToString();
-                }
-            }
-        }
-
-
+        
     }
 
 
