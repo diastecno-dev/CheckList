@@ -43,6 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblProcessador = new System.Windows.Forms.Label();
             this.lblMemoria = new System.Windows.Forms.Label();
+            this.lblHardDisk = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -213,8 +214,8 @@
             // pnlForm
             // 
             this.pnlForm.AutoSize = true;
-            this.pnlForm.Controls.Add(this.lblWindows);
             this.pnlForm.Controls.Add(this.label2);
+            this.pnlForm.Controls.Add(this.lblWindows);
             this.pnlForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlForm.Location = new System.Drawing.Point(269, 0);
             this.pnlForm.Margin = new System.Windows.Forms.Padding(4);
@@ -225,8 +226,7 @@
             // 
             // lblWindows
             // 
-            this.lblWindows.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblWindows.AllowDrop = true;
             this.lblWindows.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWindows.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblWindows.Location = new System.Drawing.Point(7, 187);
@@ -234,7 +234,7 @@
             this.lblWindows.Size = new System.Drawing.Size(828, 29);
             this.lblWindows.TabIndex = 1;
             this.lblWindows.Text = "Versão do Windows";
-            this.lblWindows.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblWindows.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label2
             // 
@@ -276,16 +276,31 @@
             this.lblMemoria.Text = "Memória RAM";
             this.lblMemoria.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // lblHardDisk
+            // 
+            this.lblHardDisk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHardDisk.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHardDisk.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblHardDisk.Location = new System.Drawing.Point(276, 295);
+            this.lblHardDisk.Name = "lblHardDisk";
+            this.lblHardDisk.Size = new System.Drawing.Size(828, 29);
+            this.lblHardDisk.TabIndex = 7;
+            this.lblHardDisk.Text = "HardDisk";
+            this.lblHardDisk.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(106F, 106F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1104, 624);
-            this.Controls.Add(this.lblMemoria);
-            this.Controls.Add(this.lblProcessador);
             this.Controls.Add(this.pnlForm);
             this.Controls.Add(this.pnlMenu);
+            this.Controls.Add(this.lblHardDisk);
+            this.Controls.Add(this.lblMemoria);
+            this.Controls.Add(this.lblProcessador);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -314,5 +329,6 @@
         private System.Windows.Forms.Label lblWindows;
         private System.Windows.Forms.Label lblProcessador;
         private System.Windows.Forms.Label lblMemoria;
+        private System.Windows.Forms.Label lblHardDisk;
     }
 }
