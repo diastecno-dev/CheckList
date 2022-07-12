@@ -79,8 +79,13 @@ namespace CheckList
             lblProcessador.Text = systemInfo.GetOperatingSystemInfo("Win32_Processor", "Name");
             lblMemoria.Text = systemInfo.GetMemorySystemInfo("Win32_PhysicalMemory", "Capacity")+" GB de Memória RAM";
             lblHardDisk.Text = systemInfo.GetMemorySystemInfo("Win32_LogicalDisk", "Size") + " GB de Armazenamento";
+            lblGpu.Text = systemInfo.GetOperatingSystemInfo("Win32_VideoController", "Name");
         }
-        
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 

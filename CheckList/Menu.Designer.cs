@@ -39,11 +39,12 @@
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlForm = new System.Windows.Forms.Panel();
-            this.lblWindows = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblWindows = new System.Windows.Forms.Label();
             this.lblProcessador = new System.Windows.Forms.Label();
             this.lblMemoria = new System.Windows.Forms.Label();
             this.lblHardDisk = new System.Windows.Forms.Label();
+            this.lblGpu = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.pnlLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -224,18 +225,6 @@
             this.pnlForm.TabIndex = 5;
             this.pnlForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlForm_Paint);
             // 
-            // lblWindows
-            // 
-            this.lblWindows.AllowDrop = true;
-            this.lblWindows.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWindows.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblWindows.Location = new System.Drawing.Point(7, 187);
-            this.lblWindows.Name = "lblWindows";
-            this.lblWindows.Size = new System.Drawing.Size(828, 29);
-            this.lblWindows.TabIndex = 1;
-            this.lblWindows.Text = "Versão do Windows";
-            this.lblWindows.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
             // label2
             // 
             this.label2.AllowDrop = true;
@@ -249,6 +238,18 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "HARDWARE";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            // 
+            // lblWindows
+            // 
+            this.lblWindows.AllowDrop = true;
+            this.lblWindows.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWindows.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblWindows.Location = new System.Drawing.Point(7, 187);
+            this.lblWindows.Name = "lblWindows";
+            this.lblWindows.Size = new System.Drawing.Size(828, 29);
+            this.lblWindows.TabIndex = 1;
+            this.lblWindows.Text = "Versão do Windows";
+            this.lblWindows.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // lblProcessador
             // 
@@ -289,6 +290,19 @@
             this.lblHardDisk.Text = "HardDisk";
             this.lblHardDisk.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // lblGpu
+            // 
+            this.lblGpu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblGpu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGpu.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblGpu.Location = new System.Drawing.Point(276, 331);
+            this.lblGpu.Name = "lblGpu";
+            this.lblGpu.Size = new System.Drawing.Size(828, 29);
+            this.lblGpu.TabIndex = 8;
+            this.lblGpu.Text = "Placa de Video";
+            this.lblGpu.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(106F, 106F);
@@ -299,11 +313,13 @@
             this.Controls.Add(this.lblHardDisk);
             this.Controls.Add(this.lblMemoria);
             this.Controls.Add(this.lblProcessador);
+            this.Controls.Add(this.lblGpu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             this.pnlLogo.ResumeLayout(false);
@@ -330,5 +346,6 @@
         private System.Windows.Forms.Label lblProcessador;
         private System.Windows.Forms.Label lblMemoria;
         private System.Windows.Forms.Label lblHardDisk;
+        private System.Windows.Forms.Label lblGpu;
     }
 }

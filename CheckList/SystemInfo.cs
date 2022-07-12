@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Management;
-using System.Text;
 
 
 namespace CheckList
@@ -20,8 +19,8 @@ namespace CheckList
 
         public string GetMemorySystemInfo(string hwclass, string syntax)
         {
-            string hardwareInfo = string.Empty;
             UInt64 memory = 0;
+            string hardwareInfo;
 
             ManagementObjectSearcher mos = new ManagementObjectSearcher("root\\CIMV2", "select * from " + hwclass);
             foreach (ManagementObject managementObject in mos.Get())
@@ -29,7 +28,10 @@ namespace CheckList
                 memory += (UInt64)managementObject[syntax];
             }
             memory /= (1024 * 1024 * 1024);
-            return hardwareInfo = memory.ToString();
+            hardwareInfo = memory.ToString(); ;
+            return hardwareInfo;
         }
+
+        
     }
 }
