@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Management;
 
 
@@ -31,7 +32,39 @@ namespace CheckList
             hardwareInfo = memory.ToString(); ;
             return hardwareInfo;
         }
+        public string GetDiskSystemInfo()
+        {
+            var disk = string.Empty;
+            var allDisk = string.Empty;
+            
 
-        
+            DriveInfo[] drives = DriveInfo.GetDrives();
+            
+
+            Array.ForEach(drives, drive =>
+            {
+                
+                if (drive.IsReady && drive.DriveType != DriveType.Removable)
+                {
+
+                    disk = $"     {drive.Name}{FormatBytes(drive.TotalSize)}     ";
+
+                    allDisk += disk;
+                }                
+            });
+            
+            return allDisk;
+        }
+        private static string FormatBytes(long bytes)
+        {
+            if (bytes >= 0x1000000000000000) { return ((double)(bytes >> 50) / 1024).ToString("0.###EB"); }
+            if (bytes >= 0x4000000000000) { return ((double)(bytes >> 40) / 1024).ToString("0.###PB"); }
+            if (bytes >= 0x10000000000) { return ((double)(bytes >> 30) / 1024).ToString("0.###TB"); }
+            if (bytes >= 0x40000000) { return ((double)(bytes >> 20) / 1024).ToString("0.###GB"); }
+            if (bytes >= 0x100000) { return ((double)(bytes >> 10) / 1024).ToString("0.###MB"); }
+            if (bytes >= 0x400) { return ((double)(bytes) / 1024).ToString("0.###") + "KB"; }
+            return bytes.ToString("0 Bytes");
+        }
+
     }
 }

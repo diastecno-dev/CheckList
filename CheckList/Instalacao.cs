@@ -5,6 +5,10 @@ namespace CheckList
 {
     public class Instalacao
     {
+        public void InstalarOffice()
+        {
+            Process.Start(ConfigurationManager.AppSettings["Office2010"], ConfigurationManager.AppSettings["Office2010Parametro"]);
+        }
         public void InstalarChrome()
         {
             Process.Start(ConfigurationManager.AppSettings["Chrome"], ConfigurationManager.AppSettings["ChromeParametro"]);

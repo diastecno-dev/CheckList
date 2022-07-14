@@ -47,12 +47,19 @@ namespace CheckList
 
         private void Instalacoes()
         {
-            //InstalarOffice();
+            InstalarOffice();
             InstalarChrome();
             InstalarKlite();
             InstalarWinrar();
             InstalarAdobeReader();
             //InstalarAtivador();
+
+        }
+
+        private void InstalarOffice()
+        {
+            if (chkOffice.Checked)
+                new Instalacao().InstalarOffice();
 
         }
 
