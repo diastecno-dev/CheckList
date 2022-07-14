@@ -1,0 +1,14 @@
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\bin\Release\CheckList.exe.config
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\bin\Release\CheckList.exe
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\bin\Release\CheckList.pdb
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.csproj.AssemblyReference.cache
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.csproj.SuggestedBindingRedirects.cache
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.InstalacaoW8.resources
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.InstalacaoW10.resources
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.InstalacaoW7.resources
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.Menu.resources
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.Properties.Resources.resources
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.csproj.GenerateResource.cache
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.csproj.CoreCompileInputs.cache
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.exe
+C:\Users\DiasTecno\OneDrive\DIASTECNO_DEV\PROJETOS\CheckList\CheckList\obj\Release\CheckList.pdb

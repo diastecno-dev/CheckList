@@ -34,7 +34,7 @@
             this.chkCodec = new System.Windows.Forms.CheckBox();
             this.chkAtivador = new System.Windows.Forms.CheckBox();
             this.chkWinrar = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.chkInstalarTodos = new System.Windows.Forms.CheckBox();
             this.btnInstalar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -43,9 +43,9 @@
             // 
             this.chkOffice.AutoSize = true;
             this.chkOffice.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkOffice.Location = new System.Drawing.Point(239, 150);
+            this.chkOffice.Location = new System.Drawing.Point(264, 166);
             this.chkOffice.Name = "chkOffice";
-            this.chkOffice.Size = new System.Drawing.Size(329, 33);
+            this.chkOffice.Size = new System.Drawing.Size(372, 35);
             this.chkOffice.TabIndex = 0;
             this.chkOffice.Text = "MICROSOFT OFFICE 2013";
             this.chkOffice.UseVisualStyleBackColor = true;
@@ -54,9 +54,9 @@
             // 
             this.chkChrome.AutoSize = true;
             this.chkChrome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkChrome.Location = new System.Drawing.Point(239, 190);
+            this.chkChrome.Location = new System.Drawing.Point(264, 210);
             this.chkChrome.Name = "chkChrome";
-            this.chkChrome.Size = new System.Drawing.Size(247, 33);
+            this.chkChrome.Size = new System.Drawing.Size(278, 35);
             this.chkChrome.TabIndex = 1;
             this.chkChrome.Text = "GOOGLE CHROME";
             this.chkChrome.UseVisualStyleBackColor = true;
@@ -65,9 +65,9 @@
             // 
             this.chkCodec.AutoSize = true;
             this.chkCodec.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkCodec.Location = new System.Drawing.Point(239, 230);
+            this.chkCodec.Location = new System.Drawing.Point(264, 254);
             this.chkCodec.Name = "chkCodec";
-            this.chkCodec.Size = new System.Drawing.Size(199, 33);
+            this.chkCodec.Size = new System.Drawing.Size(224, 35);
             this.chkCodec.TabIndex = 2;
             this.chkCodec.Text = "K-LITE CODEC";
             this.chkCodec.UseVisualStyleBackColor = true;
@@ -76,9 +76,9 @@
             // 
             this.chkAtivador.AutoSize = true;
             this.chkAtivador.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAtivador.Location = new System.Drawing.Point(239, 310);
+            this.chkAtivador.Location = new System.Drawing.Point(264, 342);
             this.chkAtivador.Name = "chkAtivador";
-            this.chkAtivador.Size = new System.Drawing.Size(152, 33);
+            this.chkAtivador.Size = new System.Drawing.Size(173, 35);
             this.chkAtivador.TabIndex = 6;
             this.chkAtivador.Text = "ATIVADOR";
             this.chkAtivador.UseVisualStyleBackColor = true;
@@ -87,29 +87,30 @@
             // 
             this.chkWinrar.AutoSize = true;
             this.chkWinrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkWinrar.Location = new System.Drawing.Point(239, 270);
+            this.chkWinrar.Location = new System.Drawing.Point(264, 298);
             this.chkWinrar.Name = "chkWinrar";
-            this.chkWinrar.Size = new System.Drawing.Size(127, 33);
+            this.chkWinrar.Size = new System.Drawing.Size(144, 35);
             this.chkWinrar.TabIndex = 5;
             this.chkWinrar.Text = "WINRAR";
             this.chkWinrar.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chkInstalarTodos
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(656, 515);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(89, 17);
-            this.checkBox4.TabIndex = 20;
-            this.checkBox4.Text = "Instalar todos";
-            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkInstalarTodos.AutoSize = true;
+            this.chkInstalarTodos.Location = new System.Drawing.Point(724, 569);
+            this.chkInstalarTodos.Name = "chkInstalarTodos";
+            this.chkInstalarTodos.Size = new System.Drawing.Size(89, 17);
+            this.chkInstalarTodos.TabIndex = 20;
+            this.chkInstalarTodos.Text = "Instalar todos";
+            this.chkInstalarTodos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.chkInstalarTodos.UseVisualStyleBackColor = true;
+            this.chkInstalarTodos.CheckedChanged += new System.EventHandler(this.chkInstalarTodos_CheckedChanged);
             // 
             // btnInstalar
             // 
-            this.btnInstalar.Location = new System.Drawing.Point(652, 486);
+            this.btnInstalar.Location = new System.Drawing.Point(720, 537);
             this.btnInstalar.Name = "btnInstalar";
-            this.btnInstalar.Size = new System.Drawing.Size(93, 23);
+            this.btnInstalar.Size = new System.Drawing.Size(103, 25);
             this.btnInstalar.TabIndex = 19;
             this.btnInstalar.Text = "INSTALAR";
             this.btnInstalar.UseVisualStyleBackColor = true;
@@ -119,20 +120,20 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label2.Location = new System.Drawing.Point(232, 25);
+            this.label2.Location = new System.Drawing.Point(256, 28);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(336, 76);
+            this.label2.Size = new System.Drawing.Size(371, 84);
             this.label2.TabIndex = 22;
             this.label2.Text = "   WINDOWS 10";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // InstalacaoW10
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(106F, 106F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(757, 565);
+            this.ClientSize = new System.Drawing.Size(836, 624);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.chkInstalarTodos);
             this.Controls.Add(this.btnInstalar);
             this.Controls.Add(this.chkAtivador);
             this.Controls.Add(this.chkWinrar);
@@ -154,7 +155,7 @@
         private System.Windows.Forms.CheckBox chkCodec;
         private System.Windows.Forms.CheckBox chkAtivador;
         private System.Windows.Forms.CheckBox chkWinrar;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox chkInstalarTodos;
         private System.Windows.Forms.Button btnInstalar;
         private System.Windows.Forms.Label label2;
     }
