@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Configuration;
 using System.Diagnostics;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace CheckList
@@ -58,38 +58,73 @@ namespace CheckList
 
         private void InstalarOffice()
         {
+            
             if (chkOffice.Checked)
                 new Instalacao().InstalarOffice();
+                Thread.Sleep(3000);
 
+            while (Process.GetProcessesByName("setup").Length != 0)
+                {
+                    int cont = 0;
+                    Thread.Sleep(3000);
+                    cont += 1;
+                }
         }
+
 
         private void InstalarChrome()
         {
             if (chkChrome.Checked)
                 new Instalacao().InstalarChrome();
-            var teste = "";
-            do
+                Thread.Sleep(3000);
+
+            while (Process.GetProcessesByName("setup").Length != 0)
             {
-                _ = Process.GetProcessesByName("msiexec");
-            } while (teste.Length != 0);
-                                
+                int cont = 0;
+                Thread.Sleep(3000);
+                cont += 1;
+            }
         }
         private void InstalarKlite()
         {
             if (chkKlite.Checked)
                 new Instalacao().InstalarKlite();
+                Thread.Sleep(3000);
+
+            while (Process.GetProcessesByName("Klitecodec").Length != 0)
+            {
+                int cont = 0;
+                Thread.Sleep(3000);
+                cont += 1;
+            }
 
         }
         private void InstalarWinrar()
-        {          
+        {
             if (chkWinrar.Checked)
                 new Instalacao().InstalarWinrar();
+                Thread.Sleep(3000);
+
+            while (Process.GetProcessesByName("winrarx64").Length != 0)
+            {
+                int cont = 0;
+                Thread.Sleep(3000);
+                cont += 1;
+            }
         }
 
         private void InstalarAdobeReader()
         {
             if (chkAdobeReader.Checked)
                 new Instalacao().InstalarAdobeReader();
+                Thread.Sleep(3000);
+
+            while (Process.GetProcessesByName("AdobeReader").Length != 0)
+            {
+                int cont = 0;
+                Thread.Sleep(3000);
+                cont += 1;
+            }
         }
     }
 }
