@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace CheckList
 {
     public partial class Menu : Form
@@ -71,5 +72,21 @@ namespace CheckList
             Application.Exit();
         }
 
+        private void pnlForm_Paint(object sender, PaintEventArgs e)
+        {
+            SystemInfo systemInfo = new SystemInfo();
+            lblWindows.Text = systemInfo.GetOperatingSystemInfo("Win32_OperatingSystem", "Caption") + " " + systemInfo.GetOperatingSystemInfo("Win32_OperatingSystem", "OSArchitecture");
+            lblProcessador.Text = systemInfo.GetOperatingSystemInfo("Win32_Processor", "Name");
+            lblMemoria.Text = systemInfo.GetMemorySystemInfo("Win32_PhysicalMemory", "Capacity")+" de Memória RAM";
+            lblHardDisk.Text = systemInfo.GetDiskSystemInfo();
+            lblGpu.Text = systemInfo.GetOperatingSystemInfo("Win32_VideoController", "Name");
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
 }
