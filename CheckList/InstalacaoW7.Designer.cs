@@ -29,27 +29,40 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InstalacaoW7));
-            this.chkAdobeReader = new System.Windows.Forms.CheckBox();
+            this.chkPDF = new System.Windows.Forms.CheckBox();
             this.chkWinrar = new System.Windows.Forms.CheckBox();
             this.chkCodec = new System.Windows.Forms.CheckBox();
-            this.chkChrome = new System.Windows.Forms.CheckBox();
+            this.chkNavegador = new System.Windows.Forms.CheckBox();
             this.chkOffice = new System.Windows.Forms.CheckBox();
             this.chkAtivador = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.chkInstalarTodos = new System.Windows.Forms.CheckBox();
             this.btnInstalar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.pbLoadingOffice = new System.Windows.Forms.PictureBox();
+            this.pbLoadingNavegador = new System.Windows.Forms.PictureBox();
+            this.pbLoadingWinrar = new System.Windows.Forms.PictureBox();
+            this.pbLoadingPDF = new System.Windows.Forms.PictureBox();
+            this.pbLoadingAtivador = new System.Windows.Forms.PictureBox();
+            this.pbLoadingCodec = new System.Windows.Forms.PictureBox();
+            this.backgroundWorkerInstalacao = new System.ComponentModel.BackgroundWorker();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingOffice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingNavegador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingWinrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingPDF)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingAtivador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingCodec)).BeginInit();
             this.SuspendLayout();
             // 
-            // chkAdobeReader
+            // chkPDF
             // 
-            this.chkAdobeReader.AutoSize = true;
-            this.chkAdobeReader.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkAdobeReader.Location = new System.Drawing.Point(239, 310);
-            this.chkAdobeReader.Name = "chkAdobeReader";
-            this.chkAdobeReader.Size = new System.Drawing.Size(219, 33);
-            this.chkAdobeReader.TabIndex = 13;
-            this.chkAdobeReader.Text = "ADOBE READER";
-            this.chkAdobeReader.UseVisualStyleBackColor = true;
+            this.chkPDF.AutoSize = true;
+            this.chkPDF.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkPDF.Location = new System.Drawing.Point(239, 310);
+            this.chkPDF.Name = "chkPDF";
+            this.chkPDF.Size = new System.Drawing.Size(219, 33);
+            this.chkPDF.TabIndex = 13;
+            this.chkPDF.Text = "ADOBE READER";
+            this.chkPDF.UseVisualStyleBackColor = true;
             // 
             // chkWinrar
             // 
@@ -73,16 +86,16 @@
             this.chkCodec.Text = "K-LITE CODEC";
             this.chkCodec.UseVisualStyleBackColor = true;
             // 
-            // chkChrome
+            // chkNavegador
             // 
-            this.chkChrome.AutoSize = true;
-            this.chkChrome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkChrome.Location = new System.Drawing.Point(239, 190);
-            this.chkChrome.Name = "chkChrome";
-            this.chkChrome.Size = new System.Drawing.Size(247, 33);
-            this.chkChrome.TabIndex = 9;
-            this.chkChrome.Text = "GOOGLE CHROME";
-            this.chkChrome.UseVisualStyleBackColor = true;
+            this.chkNavegador.AutoSize = true;
+            this.chkNavegador.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkNavegador.Location = new System.Drawing.Point(239, 190);
+            this.chkNavegador.Name = "chkNavegador";
+            this.chkNavegador.Size = new System.Drawing.Size(247, 33);
+            this.chkNavegador.TabIndex = 9;
+            this.chkNavegador.Text = "GOOGLE CHROME";
+            this.chkNavegador.UseVisualStyleBackColor = true;
             // 
             // chkOffice
             // 
@@ -106,25 +119,27 @@
             this.chkAtivador.Text = "ATIVADOR";
             this.chkAtivador.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chkInstalarTodos
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(656, 515);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(89, 17);
-            this.checkBox4.TabIndex = 17;
-            this.checkBox4.Text = "Instalar todos";
-            this.checkBox4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkInstalarTodos.AutoSize = true;
+            this.chkInstalarTodos.Location = new System.Drawing.Point(609, 515);
+            this.chkInstalarTodos.Name = "chkInstalarTodos";
+            this.chkInstalarTodos.Size = new System.Drawing.Size(89, 17);
+            this.chkInstalarTodos.TabIndex = 17;
+            this.chkInstalarTodos.Text = "Instalar todos";
+            this.chkInstalarTodos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.chkInstalarTodos.UseVisualStyleBackColor = true;
+            this.chkInstalarTodos.CheckedChanged += new System.EventHandler(this.chkInstalarTodos_CheckedChanged);
             // 
             // btnInstalar
             // 
-            this.btnInstalar.Location = new System.Drawing.Point(652, 486);
+            this.btnInstalar.Location = new System.Drawing.Point(601, 486);
             this.btnInstalar.Name = "btnInstalar";
             this.btnInstalar.Size = new System.Drawing.Size(93, 23);
             this.btnInstalar.TabIndex = 16;
             this.btnInstalar.Text = "INSTALAR";
             this.btnInstalar.UseVisualStyleBackColor = true;
+            this.btnInstalar.Click += new System.EventHandler(this.btnInstalar_Click);
             // 
             // label2
             // 
@@ -138,38 +153,129 @@
             this.label2.Text = "WINDOWS 7";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // pbLoadingOffice
+            // 
+            this.pbLoadingOffice.Image = ((System.Drawing.Image)(resources.GetObject("pbLoadingOffice.Image")));
+            this.pbLoadingOffice.Location = new System.Drawing.Point(569, 158);
+            this.pbLoadingOffice.Name = "pbLoadingOffice";
+            this.pbLoadingOffice.Size = new System.Drawing.Size(18, 18);
+            this.pbLoadingOffice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLoadingOffice.TabIndex = 20;
+            this.pbLoadingOffice.TabStop = false;
+            this.pbLoadingOffice.Visible = false;
+            // 
+            // pbLoadingNavegador
+            // 
+            this.pbLoadingNavegador.Image = ((System.Drawing.Image)(resources.GetObject("pbLoadingNavegador.Image")));
+            this.pbLoadingNavegador.Location = new System.Drawing.Point(485, 197);
+            this.pbLoadingNavegador.Name = "pbLoadingNavegador";
+            this.pbLoadingNavegador.Size = new System.Drawing.Size(18, 18);
+            this.pbLoadingNavegador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLoadingNavegador.TabIndex = 21;
+            this.pbLoadingNavegador.TabStop = false;
+            this.pbLoadingNavegador.Visible = false;
+            // 
+            // pbLoadingWinrar
+            // 
+            this.pbLoadingWinrar.Image = ((System.Drawing.Image)(resources.GetObject("pbLoadingWinrar.Image")));
+            this.pbLoadingWinrar.Location = new System.Drawing.Point(360, 277);
+            this.pbLoadingWinrar.Name = "pbLoadingWinrar";
+            this.pbLoadingWinrar.Size = new System.Drawing.Size(18, 18);
+            this.pbLoadingWinrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLoadingWinrar.TabIndex = 23;
+            this.pbLoadingWinrar.TabStop = false;
+            this.pbLoadingWinrar.Visible = false;
+            // 
+            // pbLoadingPDF
+            // 
+            this.pbLoadingPDF.Image = ((System.Drawing.Image)(resources.GetObject("pbLoadingPDF.Image")));
+            this.pbLoadingPDF.Location = new System.Drawing.Point(457, 316);
+            this.pbLoadingPDF.Name = "pbLoadingPDF";
+            this.pbLoadingPDF.Size = new System.Drawing.Size(18, 18);
+            this.pbLoadingPDF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLoadingPDF.TabIndex = 24;
+            this.pbLoadingPDF.TabStop = false;
+            this.pbLoadingPDF.Visible = false;
+            // 
+            // pbLoadingAtivador
+            // 
+            this.pbLoadingAtivador.Image = ((System.Drawing.Image)(resources.GetObject("pbLoadingAtivador.Image")));
+            this.pbLoadingAtivador.Location = new System.Drawing.Point(389, 357);
+            this.pbLoadingAtivador.Name = "pbLoadingAtivador";
+            this.pbLoadingAtivador.Size = new System.Drawing.Size(18, 18);
+            this.pbLoadingAtivador.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLoadingAtivador.TabIndex = 25;
+            this.pbLoadingAtivador.TabStop = false;
+            this.pbLoadingAtivador.Visible = false;
+            // 
+            // pbLoadingCodec
+            // 
+            this.pbLoadingCodec.Image = ((System.Drawing.Image)(resources.GetObject("pbLoadingCodec.Image")));
+            this.pbLoadingCodec.Location = new System.Drawing.Point(435, 236);
+            this.pbLoadingCodec.Name = "pbLoadingCodec";
+            this.pbLoadingCodec.Size = new System.Drawing.Size(18, 18);
+            this.pbLoadingCodec.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLoadingCodec.TabIndex = 26;
+            this.pbLoadingCodec.TabStop = false;
+            this.pbLoadingCodec.Visible = false;
+            // 
+            // backgroundWorkerInstalacao
+            // 
+            this.backgroundWorkerInstalacao.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorkerInstalacao_DoWork);
+            this.backgroundWorkerInstalacao.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorkerInstalacao_RunWorkerCompleted);
+            // 
             // InstalacaoW7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(757, 565);
+            this.Controls.Add(this.pbLoadingCodec);
+            this.Controls.Add(this.pbLoadingAtivador);
+            this.Controls.Add(this.pbLoadingPDF);
+            this.Controls.Add(this.pbLoadingWinrar);
+            this.Controls.Add(this.pbLoadingNavegador);
+            this.Controls.Add(this.pbLoadingOffice);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.chkInstalarTodos);
             this.Controls.Add(this.btnInstalar);
             this.Controls.Add(this.chkAtivador);
-            this.Controls.Add(this.chkAdobeReader);
+            this.Controls.Add(this.chkPDF);
             this.Controls.Add(this.chkWinrar);
             this.Controls.Add(this.chkCodec);
-            this.Controls.Add(this.chkChrome);
+            this.Controls.Add(this.chkNavegador);
             this.Controls.Add(this.chkOffice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InstalacaoW7";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "APPs Windows 7";
+            this.Load += new System.EventHandler(this.InstalacaoW7_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingOffice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingNavegador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingWinrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingPDF)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingAtivador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoadingCodec)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox chkAdobeReader;
-        private System.Windows.Forms.CheckBox chkWinrar;
-        private System.Windows.Forms.CheckBox chkCodec;
-        private System.Windows.Forms.CheckBox chkChrome;
-        private System.Windows.Forms.CheckBox chkOffice;
-        private System.Windows.Forms.CheckBox chkAtivador;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button btnInstalar;
         private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.CheckBox chkPDF;
+        public System.Windows.Forms.CheckBox chkWinrar;
+        public System.Windows.Forms.CheckBox chkCodec;
+        public System.Windows.Forms.CheckBox chkNavegador;
+        public System.Windows.Forms.CheckBox chkOffice;
+        public System.Windows.Forms.CheckBox chkAtivador;
+        public System.Windows.Forms.CheckBox chkInstalarTodos;
+        public System.Windows.Forms.PictureBox pbLoadingOffice;
+        public System.Windows.Forms.PictureBox pbLoadingNavegador;
+        public System.Windows.Forms.PictureBox pbLoadingWinrar;
+        public System.Windows.Forms.PictureBox pbLoadingPDF;
+        public System.Windows.Forms.PictureBox pbLoadingAtivador;
+        public System.Windows.Forms.PictureBox pbLoadingCodec;
+        private System.ComponentModel.BackgroundWorker backgroundWorkerInstalacao;
     }
 }
