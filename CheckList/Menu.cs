@@ -8,11 +8,11 @@ namespace CheckList
     public partial class Menu : Form
     {
         private Form formMenu;
-        
+
         public Menu()
         {
             InitializeComponent();
-            
+
         }
 
         private void FormShow(Form frm)
@@ -42,7 +42,7 @@ namespace CheckList
         private void btnSair_Click(object sender, EventArgs e)
         {
             var menuPrincipal = new Menu();
-            menuPrincipal.Show();           
+            menuPrincipal.Show();
         }
 
         private void btnW8_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace CheckList
         private void btnW7_Click(object sender, EventArgs e)
         {
             ActiveButton(btnW7);
-            var formW7 = new InstalacaoW7();            
+            var formW7 = new InstalacaoW7();
             FormShow(formW7);
         }
 
